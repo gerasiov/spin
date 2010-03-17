@@ -1,0 +1,15 @@
+Source: spin
+Section: non-free/science
+Priority: optional
+Maintainer: Alexander GQ Gerasiov <gq@debian.org>
+Build-Depends: debhelper (>= 7.0.0), cdbs, byacc
+Standards-Version: 3.8.4
+Homepage: http://spinroot.com
+
+Package: spin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: formal verification tool
+ Spin is a popular open-source software tool, used by thousands of people
+ worldwide, that can be used for the formal verification of distributed software
+ systems.

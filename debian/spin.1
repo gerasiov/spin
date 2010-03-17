@@ -1,0 +1,108 @@
+.TH SPIN "1" "March 2010" "Spin Version 5.2.4 -- 2 December 2009"
+.SH NAME
+spin -- model checker
+.SH "SYNOPSIS" 
+.PP 
+spin [\-option] ... [\-option] file
+.SH DESCRIPTION
+Spin is a general tool for verifying the correctness of distributed software models in a rigorous and mostly automated fashion.
+.SH "OPTIONS"
+.PP
+Note: file must always be the last argument
+.IP
+\fB\-A\fR apply slicing algorithm
+.IP
+\fB\-a\fR generate a verifier in pan.c
+.IP
+\fB\-B\fR no final state details in simulations
+.IP
+\fB\-b\fR don't execute printfs in simulation
+.IP
+\fB\-C\fR print channel access info (combine with \fB\-g\fR etc.)
+.IP
+\fB\-c\fR columnated \fB\-s\fR \fB\-r\fR simulation output
+.IP
+\fB\-d\fR produce symbol\-table information
+.IP
+\fB\-Dyyy\fR pass \fB\-Dyyy\fR to the preprocessor
+.IP
+\fB\-Eyyy\fR pass yyy to the preprocessor
+.IP
+\fB\-f\fR "..formula.."  translate LTL into never claim
+.IP
+\fB\-F\fR file  like \fB\-f\fR, but with the LTL formula stored in a 1\-line file
+.IP
+\fB\-g\fR print all global variables
+.IP
+\fB\-h\fR  at end of run, print value of seed for random nr generator used
+.IP
+\fB\-i\fR interactive (random simulation)
+.IP
+\fB\-I\fR show result of inlining and preprocessing
+.IP
+\fB\-J\fR reverse eval order of nested unlesses
+.IP
+\fB\-jN\fR skip the first N steps in simulation trail
+.IP
+\fB\-l\fR print all local variables
+.IP
+\fB\-M\fR print msc\-flow in Postscript
+.IP
+\fB\-m\fR lose msgs sent to full queues
+.IP
+\fB\-N\fR file use never claim stored in file
+.IP
+\fB\-nN\fR seed for random nr generator
+.IP
+\fB\-o1\fR turn off dataflow\-optimizations in verifier
+.IP
+\fB\-o2\fR don't hide write\-only variables in verifier
+.IP
+\fB\-o3\fR turn off statement merging in verifier
+.IP
+\fB\-o4\fR turn on rendezvous optiomizations in verifier
+.IP
+\fB\-o5\fR turn on case caching (reduces size of pan.m, but affects reachability reports)
+.IP
+\fB\-Pxxx\fR use xxx for preprocessing
+.IP
+\fB\-p\fR print all statements
+.IP
+\fB\-qN\fR suppress io for queue N in printouts
+.IP
+\fB\-r\fR print receive events
+.IP
+\fB\-S1\fR and \fB\-S2\fR separate pan source for claim and model
+.IP
+\fB\-s\fR print send events
+.IP
+\fB\-T\fR do not indent printf output
+.IP
+\fB\-t[N]\fR follow [Nth] simulation trail
+.IP
+\fB\-Uyyy\fR pass \fB\-Uyyy\fR to the preprocessor
+.IP
+\fB\-uN\fR stop a simulation run after N steps
+.IP
+\fB\-v\fR verbose, more warnings
+.IP
+\fB\-w\fR very verbose (when combined with \fB\-l\fR or \fB\-g\fR)
+.IP
+\fB\-[XYZ]\fR reserved for use by xspin interface
+.IP
+\fB\-V\fR print version number and exit
+.SH "SEE ALSO"
+The full documentation for
+.B spin
+is available at http://spinroot.com
+.SH "AUTHOR"
+.PP
+This manual page was written by Alexander GQ Gerasiov <gq@debian.org> for
+the \fBDebian\fP system (but may be used by others).  Permission is
+granted to copy, distribute and/or modify this document under
+the terms of the GNU General Public License, Version 2 any
+later version published by the Free Software Foundation.
+
+.PP
+On Debian systems, the complete text of the GNU General Public
+License can be found in /usr/share/common-licenses/GPL.
